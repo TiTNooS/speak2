@@ -1,13 +1,40 @@
-#content {
-    width:700px;
-    height:768px;
-    background-color: pink;
-    background-image: url("../images/index_fond.jpg");
-    background-repeat: no-repeat ; /*pas de répition de l'image*/
-    background-attachment: scroll ; /*suit le mouvement de l'image*/
+html, body {
+    height: 100%;
 }
 
-#sidebar {
-    width:324px;
-    height:300px;
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/*** Main nav ***/
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    float: right; 
+}
+
+.main-nav ul > li {
+    float: left;
+    margin: 0 8px;
+}
+
+/*** HOME ***/
+
+.home.container {
+    background-color: #CCC;
+    background-image: url('/images/background_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home aside {
+    background: #DDD;
+    opacity: 0.5;
+    padding: 10px;
 }

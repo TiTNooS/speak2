@@ -10,19 +10,23 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
         {% block stylesheets %}
-            <link rel="stylesheet" href="css/knacss-unminified.css">
+            <link rel="stylesheet" href="/css/knacss-unminified.css">
         {% endblock %}
     </head>
 
     <body>
-        <div id="sidebar">
-            {% block sidebar %}{% endblock %}
-        </div>
-        
-        <div id="content">
-            {% block body %}{% endblock %}
-        </div>
-        
+        <nav class="main-nav">
+            <ul>
+                <li><a class="btn" href="">Actualités</a></li>
+                <li><a class="btn" href="">Nous</a></li>
+                <li><a class="btn" href="">Témoignages</a></li>
+                <li><a class="btn" href="">Partenaires</a></li>
+                <li><a class="btn" href="">FAQ</a></li>
+                <li><a class="btn" href="">Contact</a></li>
+            </ul>
+        </nav>
+        {% block body %}{% endblock %}
+
         {% block javascripts %}
         {% endblock %}
     </body>
