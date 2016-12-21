@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/tchat.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="../images/index_fond.jpg" alt="" height=25 width=150>
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="../images/index_fond.jpg" alt="" height=25 width=150>
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="../images/index_fond.jpg" alt="" height=25 width=150>
+        </a>
+      </div>
+    </div>
+    <a class="btn btn-success" href="{{ path('homepage') }}">HOME</a>
+{% endblock %}

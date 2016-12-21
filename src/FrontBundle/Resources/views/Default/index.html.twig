@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/index.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block sidebar %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>SPEAK2</h1>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+            <p><a class="btn" href="#" role="button">connexion</a></p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+    <h1>BODY</h1>
+
+    <a class="btn" href="{{ path('profil') }}">Profil</a>
+    <a class="btn" href="{{ path('tchat') }}">Tchat</a>
+
+{% endblock %}
+
+

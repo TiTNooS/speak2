@@ -1,0 +1,13 @@
+#content {
+    width:700px;
+    height:768px;
+    background-color: pink;
+    background-image: url("../images/index_fond.jpg");
+    background-repeat: no-repeat ; /*pas de répition de l'image*/
+    background-attachment: scroll ; /*suit le mouvement de l'image*/
+}
+
+#sidebar {
+    width:324px;
+    height:300px;
+}
